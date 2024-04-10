@@ -1,0 +1,12 @@
+cobot:
+  # Publish all joint states
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  gripper_controller:
+    type: effort_controllers/JointPositionController
+    joint: gripper_right_joint
+    pid: {p: 2500, i: 10, d: 10}
+
+  
