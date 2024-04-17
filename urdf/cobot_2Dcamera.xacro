@@ -3,6 +3,8 @@
 
     <xacro:include filename="$(find cobot_sim)/urdf/joint_link.xacro"/>
     <xacro:include filename="$(find cobot_sim)/urdf/gripper.xacro"/>
+    <xacro:include filename="$(find cobot_sim)/urdf/camera.xacro"/>
+    <xacro:include filename="$(find cobot_sim)/urdf/camera2.xacro"/>
 
 
     <!-- Constants -->
@@ -97,9 +99,6 @@
     <xacro:transmission name="trans_link4__link5" 
                         joint_name="link4__link5" 
                         actuator_name="motor_link4__link5" />
-
-
-    
 
 
     <!-- Gazebo plugin -->
